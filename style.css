@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Разрешить изменение высоты */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#notes-list {
+    margin-top: 20px;
+}
+
+.note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-text {
+    flex-grow: 1;
+}
+.note-image {
+    max-width: 100%;  /* Или другое значение по вашему вкусу */
+    height: auto;
+    margin-bottom: 5px; /* Добавьте отступ снизу */
+}
+.note-buttons {
+    display: flex;
+    gap: 5px; /* Расстояние между кнопками */
+}
+
+
+.offline-hidden {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff9999;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.offline-visible {
+    display: block;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .note {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .note-buttons {
+        margin-top: 5px;
+    }
+}
